@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joswah.scheduler.HomeFragment"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageHome"
+        android:layout_width="344dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/work_schedules"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Cek Semua Jadwal &amp; Ketersediaan Ruangan di sini..."
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSchedules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Lihat Jadwal"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_home"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textUpcomingSchedules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Jadwal Terdekat"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcomingSchedules"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>

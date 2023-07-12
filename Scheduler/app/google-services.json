@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728634810636",
+    "firebase_url": "https://scheduler-joswah-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "scheduler-joswah",
+    "storage_bucket": "scheduler-joswah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728634810636:android:bff4478e8a80ec0f45e929",
+        "android_client_info": {
+          "package_name": "com.joswah.scheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728634810636-o2c9eg37dkm6epne727psf3d5bvanb20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKB5Qc1B8kY9XolgwGoAfJhLqMwEoDBF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728634810636-o2c9eg37dkm6epne727psf3d5bvanb20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

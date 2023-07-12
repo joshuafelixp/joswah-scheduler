@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.joswah.scheduler.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_schedule"
+            app:destination="@id/nav_schedule"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_nav_home_to_nav_room"
+            app:destination="@id/nav_room" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_addSchedule"
+            app:destination="@id/nav_addSchedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.joswah.scheduler.ScheduleFragment"
+        android:label="@string/menu_schedule"
+        tools:layout="@layout/fragment_schedule">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_room"
+        android:name="com.joswah.scheduler.RoomFragment"
+        android:label="@string/menu_room"
+        tools:layout="@layout/fragment_room"
+        />
+    <activity
+        android:id="@+id/nav_login"
+        android:name="com.joswah.scheduler.LoginActivity"
+        android:label="@string/menu_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/nav_addSchedule"
+        android:name="com.joswah.scheduler.admin.AddScheduleActivity"
+        android:label="@string/menu_add_schedule"
+        tools:layout="@layout/activity_add_schedule" />
+</navigation>

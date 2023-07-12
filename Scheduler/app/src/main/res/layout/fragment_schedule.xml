@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.joswah.scheduler.ScheduleFragment">
+
+    <TextView
+        android:id="@+id/textSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Cek Jadwal"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="30dp"
+        android:text="Sabtu, 11 Maret 2023"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_button_date"
+        android:padding="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        />
+
+</LinearLayout>

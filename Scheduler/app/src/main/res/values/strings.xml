@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Scheduler</string>
+
+    <string name="menu_login">Masuk</string>
+    <string name="menu_logout">Keluar</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_schedule">Jadwal</string>
+    <string name="menu_room">Ruangan</string>
+    <string name="menu_add_schedule">Buat Jadwal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

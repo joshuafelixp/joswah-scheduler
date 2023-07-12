@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_account">
+        <item android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account_circle"
+            android:title="@string/menu_login"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_menu">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home"
+            />
+        <item android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_date_range"
+            android:title="@string/menu_schedule"
+            />
+        <item android:id="@+id/nav_room"
+            android:icon="@drawable/ic_location_city"
+            android:title="@string/menu_room"
+            />
+    </group>
+</menu>
